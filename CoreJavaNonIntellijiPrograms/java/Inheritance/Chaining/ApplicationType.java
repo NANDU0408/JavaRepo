@@ -1,0 +1,3 @@
+enum ApplicationType{
+	SOCIAL,ECOMMERCE,ENTERTAINMENT,PERSONAL;
+}

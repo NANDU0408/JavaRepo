@@ -1,0 +1,149 @@
+1)A) Java is an object oriented programming language which is also known as the one of the oldest object oriented programming language in the world.Its special feature is when we make
+     any changes inside the jvm then it does not effect the other application or files in the system.
+     JAVAC is known as the java compiler it stores the files and jar files which are needed for the compilation of the code.Even when we are compiling the program in command prompt we first         
+     write javac and then write filename.java for compilation.
+
+2)A)JDK:Java Development Kit which stores the jar files and other files which are needed to compile and run the code.
+    JRE: Java Runtime Environment start its work after compiling and while ececuting or running the code.As we know the javac will chech all the syntax errors during compilation but the jre
+         while the program will be in execution it checks the errors like methods invoking errors and function errors, etc.
+    JVM: Java Virtual Machine is the one which creates an environment inside the layer so that the code can be executed without any problems from the other applications in the system. JVM 
+         also helps in compilation process like converting the source code into byte code as of system only understands only the 0's and 1's.
+
+3)A)              .javafile                                                .class file
+   
+   1) .java file is an executable file which is understood               1).class file is the file which is stored in machine understable language.
+       the developer easily.
+   
+   2) We run the program by running the .java file directly.             2).class file gets executed during runtime.
+
+   3) .java file is written in java developer understable                3) .class file is written in machine understandable language.
+       language.
+
+4)A) The java IDE's are
+     1)Eclipse
+     2)IntelG
+     3)VS code
+     4)Online Java Compiler
+     5)Notepad++
+
+5)A) Variable is the the one in which we store the data, its also known as instance memory creation when we declare a variable and the we store the data inside that memory space and the size
+     of the memory is decided on what datatypes we are using to declare the instance variable.
+     Types of variables 
+     1)Literals(The variables whose value is given at the time of declaration like eg.,int/float/long/double value=10;, String/String[]={};, int[]={}).
+     2)Methods (The variables which are used to declare user defined variables).
+     3)Reference variables(The variables which are declared using reference and then used the reference name to evoke them in the class).
+     4)Constructors(These are defined by using new keyword in one class and its reference is called in another class)
+
+6)A) Object Oriented Programming in java means there is no restrictions like we have to use pre-defined variables or other things.Developer can declare and use any type of variables in code.
+     Java is a portable language means we can write the program in one system's JVM and compile and run,then we can run the code in any other system's jvm by using only byte code and    
+     source code.
+
+7)A) Firstly the class Xworkz is declared using public so that we can use this class anywhere using suitable invoke methods and if we do not define it as public also it will be stored as 
+     public as default
+     Next the main static method using void is declared with String array and arguments is passed, no print statements or methods are written inside the first main method.
+     In the second main method the static method is declared with only String with arguments and i this also no print statements is used.
+     So the output can be written statements error or no-output.
+
+8)A) Datatypes are are the types which decide the size of the memory to store data in variables is decided after declaration.It also decide which type os data to be stored.
+    Types
+    1)int(4 Bytes)(Stores the integer data only eg-0)
+    2)float(4 Bytes)(Stores the decimals also eg-0.0)
+    3)double(8 bytes)(Stores the integer datatypes)
+    4)long(8 bytes)(Stores the decimals)
+    5)String(16 bytes)(Stores String values)
+    6)char(2 bytes)(Stores only character type data)
+
+9)A)Dot operater is used to link the variables with the method or class names.Its also used to invoke the class and the method in the other class.
+    className.methodName eg Fire.accident("");
+
+10)A) Features of java are:
+      1) Java is a portable programming language whose source code can be executed on any of the compiler so only its called as Object Oriented Programming.
+      2) Same compiler is not needed in the other system to run the code.
+      3) The .class file is stored in the system so that if any changes made before execution cannot be changed in the .class file.
+      4) Its a platform independent language.
+
+11)A) Array is a datatype used to store an array of same type of datatype. If we declare a char array we cannot store integer values in that array.
+      public class ArrayList{
+	public static void main(String[] nnn){
+	int[] array={1,2,3,4,5};
+	System.out.println("array:"=+array);
+	}
+	}
+
+12)A) Class is known as the blueprint of the program which decides what type of methods, variables can be declared and used.
+      Object is known as the instance of the class
+      Types of objects:
+	1)Builtin data types objects(int,float, double, String, long,etc)
+	2)Self declared objects(methods)
+
+eg class Animal{
+     public static void main(String[] nnn){
+  	public void cat(String type){
+	System.out.println("");
+	}
+	}
+	}
+
+13)A)Keywords are the predefined datatypes or function keyword or invoking keywords.
+    Keywords:
+   1)int
+   2)this
+   3)float
+   4)char
+   5)double
+   6)String
+   7)long
+   8)free
+   9)catch
+   10)throw
+   11)throws
+   12) while
+   13) do while
+   14)for
+   15) if else
+
+14)A) constructor is a method which is as of the class name. It can be default non-parameterized method or parameterized method which an be invoked in another class using 
+      reference and while declaring it is declared using new keyword.
+      Two types of constructor methods
+      1)Default non parameterized constructor method:no parameters are declared as arguments but it uses the method invoked from its parents default instance parameters.
+      2)Patrameterized constructor method: In this the parameters are declared locally inside the method and the same parameters are used inside the scope.
+
+15)A)Main method is static because the main method is always declared in the above as its used by all the other instances or methods inside the class. It cannot be invoked without using 
+    class name. 
+    Types:
+	public static void main(String[] nnn){}
+        public void campus("String a"){}
+        public int campus(int num){
+ 
+	    return 0;
+	}
+
+16)A)class ArrayList1{
+	public static void main(String[] nnn){
+	 int[] array={12,3,2,45,6,7,6};
+	 int length=7;
+		System.out.println("Array list Program");
+		for(int i=0;i<array.length;i++){
+			if(array[i]==length){
+ 				System.out.println(array[i]);
+				System.out.println("The length of the array in the list");
+		}
+		
+}
+}
+}
+
+17)A)Method is defined by the developer as per the requirements of the program. Method overloading happens when we declare a method with the same name but with different number and types 
+     of parameters.
+
+	Method
+	public void animal(){}
+	 
+	Method overloading
+	public void cars(){}
+	public void cars(String name, int carNo){}
+
+
+
+
+

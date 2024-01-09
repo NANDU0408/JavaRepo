@@ -1,0 +1,77 @@
+1)class CheckPrime{
+public static void static(String[] nnn){
+int p = 5;
+int n;
+if(p!=n/2){
+System.out.println("Is a prime number");
+}
+else{
+System.out.println("Not a prime number");
+}
+}
+}
+
+2)class ReverseString {
+ public static void main(String[] args)
+{
+        String input = "Vijay";
+ 
+        StringBuilder input1 = new StringBuilder();
+
+        input1.append(input);
+
+        input1.reverse();
+ 
+        System.out.println(input1);
+    }
+}
+
+
+3)class changeCase {    
+public static void main(String[] args) {    
+            
+ String str1="Great Power";    
+ StringBuffer newStr=new StringBuffer(str1);    
+            
+for(int i = 0; i < str1.length(); i++) {                  
+if(Character.isLowerCase(str1.charAt(i))) {  
+newStr.setCharAt(i, Character.toUpperCase(str1.charAt(i)));    
+}              
+else if(Character.isUpperCase(str1.charAt(i))) {      
+newStr.setCharAt(i, Character.toLowerCase(str1.charAt(i)));    
+}    
+}    
+System.out.println("String after case conversion : " + newStr);    
+}    
+}   
+
+
+4)class starPattern{
+public static void main(String[] nnn){
+System.out.println(
+}
+}
+
+
+5)class NumPattern {
+
+  public static void main(String[] args) {
+    int rows = 5;
+
+    for(int i = rows; i >= 1; --i) {
+      for(int s = 1; space <= rows - i; ++s) {
+        System.out.print("  ");
+      }
+
+      for(int j=i; j <= 2 * i - 1; ++j) {
+        System.out.print("1,2,3,4,5,6 ");
+      }
+
+      for(int j = 0; j < i - 1; ++j) {
+        System.out.print("1,2,3,4,5,6 ");
+      }
+
+      System.out.println();
+    }
+  }
+}
