@@ -1,0 +1,118 @@
+package com.xworkz.interfacea.nandishA.collectionJ;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+
+public class AirPort {
+    public static void main(String[] args) {
+        Collection<String> airport = new ArrayList<>();
+                airport.add("John F. Kennedy International Airport (JFK) - New York, USA");
+                airport.add("Heathrow Airport (LHR) - London, UK");
+                airport.add("Dubai International Airport (DXB) - Dubai, UAE");
+                airport.add("Los Angeles International Airport (LAX) - Los Angeles, USA");
+                airport.add("Tokyo Haneda Airport (HND) - Tokyo, Japan");
+                airport.add("O'Hare International Airport (ORD) - Chicago, USA");
+                airport.add( "Beijing Capital International Airport (PEK) - Beijing, China");
+                airport.add("Frankfurt Airport (FRA) - Frankfurt, Germany");
+                airport.add("Changi Airport (SIN) - Singapore");
+                airport.add(" Amsterdam Airport Schiphol (AMS) - Amsterdam, Netherlands");;
+                airport.add(" Sydney Airport (SYD) - Sydney, Australia");
+                airport.add("San Francisco International Airport (SFO) - San Francisco, USA");
+                airport.add("Incheon International Airport (ICN) - Seoul, South Korea");
+                airport.add("Hong Kong International Airport (HKG) - Hong Kong");
+                airport.add("Denver International Airport (DEN) - Denver, USA");
+                airport.add("Indira Gandhi International Airport (DEL) - Delhi, India");
+                airport.add("Istanbul Airport (IST) - Istanbul, Turkey");
+                airport.add("Suvarnabhumi Airport (BKK) - Bangkok, Thailand");
+                airport.add("Munich Airport (MUC) - Munich, Germany");
+                airport.add("ancouver International Airport (YVR) - Vancouver, Canada");
+                airport.add("Zurich Airport (ZRH) - Zurich, Switzerland");
+                airport.add("Hartsfield-Jackson Atlanta International Airport (ATL) - Atlanta, USA");
+                airport.add("Toronto Pearson International Airport (YYZ) - Toronto, Canada");
+                airport.add("Dallas/Fort Worth International Airport (DFW) - Dallas, USA");
+                airport.add("Seattle-Tacoma International Airport (SEA) - Seattle, USA");
+                airport.add("Abu Dhabi International Airport (AUH) - Abu Dhabi, UAE");
+                airport.add("Barcelona–El Prat Airport (BCN) - Barcelona, Spain");
+                airport.add("Kuala Lumpur International Airport (KUL) - Kuala Lumpur, Malaysia");
+                airport.add("Minneapolis−Saint Paul International Airport (MSP) - Minneapolis, USA");
+                airport.add("Leonardo da Vinci–Fiumicino Airport (FCO) - Rome, Italy");
+                airport.add("Munich Airport (MUC) - Munich, Germany");
+                airport.add("Phoenix Sky Harbor International Airport (PHX) - Phoenix, USA");
+                airport.add("Manchester Airport (MAN) - Manchester, UK");
+                airport.add("Minoy Aquino International Airport (MNL) - Manila, Philippines");
+                airport.add("San Diego International Airport (SAN) - San Diego, USA");
+                airport.add("Cairo International Airport (CAI) - Cairo, Egypt");
+                airport.add("Brussels Airport (BRU) - Brussels, Belgium");
+                airport.add("Melbourne Airport (MEL) - Melbourne, Australia");
+                airport.add("Dublin Airport (DUB) - Dublin, Ireland");
+                airport.add("Seattle-Tacoma International Airport (SEA) - Seattle, USA");
+                airport.add("Boston Logan International Airport (BOS) - Boston, USA");
+                airport.add("Doha Hamad International Airport (DOH) - Doha, Qatar");
+                airport.add("Oslo Airport, Gardermoen (OSL) - Oslo, Norway");
+                airport.add("Auckland Airport (AKL) - Auckland, New Zealand");
+                airport.add("Chennai International Airport (MAA) - Chennai, India");
+                airport.add("Perth Airport (PER) - Perth, Australia");
+                airport.add("Philadelphia International Airport (PHL) - Philadelphia, USA");
+                airport.add("Portland International Airport (PDX) - Portland, USA");
+                airport.add("Vienna International Airport (VIE) - Vienna, Austria");
+                airport.add("Stockholm Arlanda Airport (ARN) - Stockholm, Sweden");
+                airport.add("Athens International Airport (ATH) - Athens, Greece");
+                airport.add("Buenos Aires Ezeiza International Airport (EZE) - Buenos Aires, Argentina");
+                airport.add("Mumbai Chhatrapati Shivaji Maharaj International Airport (BOM) - Mumbai, India");
+                airport.add("Tampa International Airport (TPA) - Tampa, USA");
+                airport.add("Hong Kong International Airport (HKG) - Hong Kong");
+                airport.add("San Jose International Airport (SJC) - San Jose, USA");
+                airport.add("George Bush Intercontinental Airport (IAH) - Houston, USA");
+                airport.add("Lyon–Saint-Exupéry Airport (LYS) - Lyon, France");
+                airport.add("Budapest Ferenc Liszt International Airport (BUD) - Budapest, Hungary");
+                airport.add("Baltimore/Washington International Thurgood Marshall Airport (BWI) - Baltimore, USA");
+                airport.add("Cairo International Airport (CAI) - Cairo, Egypt");
+                airport.add("Dublin Airport (DUB) - Dublin, Ireland");
+                airport.add("Chennai International Airport (MAA) - Chennai, India");
+                airport.add("Athens International Airport (ATH) - Athens, Greece");
+                airport.add("Philadelphia International Airport (PHL) - Philadelphia, USA");
+                airport.add("Portland International Airport (PDX) - Portland, USA");
+                airport.add("Vienna International Airport (VIE) - Vienna, Austria");
+                airport.add("Stockholm Arlanda Airport (ARN) - Stockholm, Sweden");
+                airport.add("Buenos Aires Ezeiza International Airport (EZE) - Buenos Aires, Argentina");
+                airport.add("Mumbai Chhatrapati Shivaji Maharaj International Airport (BOM) - Mumbai, India");
+                airport.add("Tampa International Airport (TPA) - Tampa, USA");
+                airport.add("Hong Kong International Airport (HKG) - Hong Kong");
+                airport.add("San Jose International Airport (SJC) - San Jose, USA");
+                airport.add("George Bush Intercontinental Airport (IAH) - Houston, USA");
+                airport.add("Lyon–Saint-Exupéry Airport (LYS) - Lyon, France");
+                airport.add("Budapest Ferenc Liszt International Airport (BUD) - Budapest, Hungary");
+                airport.add("Baltimore/Washington International Thurgood Marshall Airport (BWI) - Baltimore, USA");
+                airport.add("Cairo International Airport (CAI) - Cairo, Egypt");
+                airport.add("Dublin Airport (DUB) - Dublin, Ireland");
+                airport.add("Chennai International Airport (MAA) - Chennai, India");
+                airport.add("Athens International Airport (ATH) - Athens, Greece");
+                airport.add("Philadelphia International Airport (PHL) - Philadelphia, USA");
+                airport.add("Portland International Airport (PDX) - Portland, USA");
+                airport.add("Vienna International Airport (VIE) - Vienna, Austria");
+                airport.add("Stockholm Arlanda Airport (ARN) - Stockholm, Sweden");
+                airport.add("Buenos Aires Ezeiza International Airport (EZE) - Buenos Aires, Argentina");
+                airport.add("Mumbai Chhatrapati Shivaji Maharaj International Airport (BOM) - Mumbai, India");
+                airport.add("Tampa International Airport (TPA) - Tampa, USA");
+                airport.add("Hong Kong International Airport (HKG) - Hong Kong");
+                airport.add("San Jose International Airport (SJC) - San Jose, USA");
+                airport.add("George Bush Intercontinental Airport (IAH) - Houston, USA");
+                airport.add("Lyon–Saint-Exupéry Airport (LYS) - Lyon, France");
+                airport.add("Budapest Ferenc Liszt International Airport (BUD) - Budapest, Hungary");
+                airport.add("Baltimore/Washington International Thurgood Marshall Airport (BWI) - Baltimore, USA");
+                airport.add("Cairo International Airport (CAI) - Cairo, Egypt");
+                airport.add("Dublin Airport (DUB) - Dublin, Ireland");
+                airport.add("Chennai International Airport (MAA) - Chennai, India");
+                airport.add("Athens International Airport (ATH) - Athens, Greece");
+                airport.add("Philadelphia International Airport (PHL) - Philadelphia, USA");
+                airport.add("Portland International Airport (PDX) - Portland, USA");
+
+        Iterator<String> itr = airport.iterator();
+        while (itr.hasNext()){
+            String apt = itr.next();
+            System.out.println("Airport in uppercase: " + apt.toUpperCase());
+
+        }
+    }
+}
