@@ -1,4 +1,4 @@
-package com.xworkz.nandish.dtoRunner;
+package com.xworkz.nandish.dtoImpl.sensorImpl;
 
 import com.xworkz.nandish.dto.SensorDTO;
 

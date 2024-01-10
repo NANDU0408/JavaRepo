@@ -1,6 +1,7 @@
 package com.xworkz.nandish.dtoRunner;
 
 import com.xworkz.nandish.dto.SensorDTO;
+import com.xworkz.nandish.dtoImpl.sensorImpl.SensorDTOImpl;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,9 +12,9 @@ public class SensorRunner {
     public static void main(String[] args) {
         SensorDTO sensorDTO = new SensorDTO("Sensor1","Infrared",545,500);
         SensorDTO sensorDTO1 = new SensorDTO("Sensor2","Temperature",676,796);
-        SensorDTO sensorDTO2 = new SensorDTO("Sensor3","mobile",234,124);
-        SensorDTO sensorDTO3 = new SensorDTO("Sensor4","radio",132,454);
-        SensorDTO sensorDTO4 = new SensorDTO("Sensor5","direct",894,122);
+        SensorDTO sensorDTO2 = new SensorDTO("Sensor3","Mobile",234,124);
+        SensorDTO sensorDTO3 = new SensorDTO("Sensor4","Radio",132,454);
+        SensorDTO sensorDTO4 = new SensorDTO("Sensor5","Direct",894,122);
 
         List<SensorDTO> list = new ArrayList<>();
         list.add(sensorDTO);
@@ -50,7 +51,7 @@ public class SensorRunner {
         Collections.sort(list,ref);
         System.out.println();
 
-        System.out.println("In Descending Order");
+        System.out.println("Cost In Descending Order");
         for (SensorDTO a : list){
             System.out.println(a);
         }
@@ -58,7 +59,7 @@ public class SensorRunner {
 
         Collections.sort(list,ref1);
 
-        System.out.println("In Ascending Order");
+        System.out.println(" Cost In Ascending Order");
         for (SensorDTO a : list){
             System.out.println(a);
         }
@@ -73,6 +74,66 @@ public class SensorRunner {
         System.out.println("**************************************************************");
         Collections.sort(list,ref3);
         System.out.println("Distance In Ascending Order");
+        for (SensorDTO a : list){
+            System.out.println(a);
+        }
+
+        System.out.println("**************************************************************");
+        Comparator<SensorDTO> ref4 = new SensorDTOImpl(){
+            public int compare(SensorDTO o1, SensorDTO o2) {
+                String firstName = o1.getName();
+                String fName = o2.getName();
+                return firstName.compareTo(fName);
+            }
+        };
+
+        Collections.sort(list,ref4);
+        System.out.println(" Name In Ascending Order");
+        for (SensorDTO a : list){
+            System.out.println(a);
+        }
+
+        System.out.println("**************************************************************");
+        Comparator<SensorDTO> ref5 = new SensorDTOImpl(){
+            public int compare(SensorDTO o1, SensorDTO o2) {
+                String firstName = o1.getName();
+                String fName = o2.getName();
+                return fName.compareTo(firstName);
+            }
+        };
+
+        Collections.sort(list,ref5);
+        System.out.println(" Name In Descending Order");
+        for (SensorDTO a : list){
+            System.out.println(a);
+        }
+
+        System.out.println("**************************************************************");
+        Comparator<SensorDTO> ref6 = new SensorDTOImpl(){
+            public int compare(SensorDTO o1, SensorDTO o2) {
+                String firsttype = o1.getType();
+                String ftype = o2.getType();
+                return firsttype.compareTo(ftype);
+            }
+        };
+
+        Collections.sort(list,ref6);
+        System.out.println(" Type In Ascending Order");
+        for (SensorDTO a : list){
+            System.out.println(a);
+        }
+
+        System.out.println("**************************************************************");
+        Comparator<SensorDTO> ref7 = new SensorDTOImpl(){
+            public int compare(SensorDTO o1, SensorDTO o2) {
+                String firsttype = o1.getType();
+                String ftype = o2.getType();
+                return ftype.compareTo(firsttype);
+            }
+        };
+
+        Collections.sort(list,ref7);
+        System.out.println(" Type In Descending Order");
         for (SensorDTO a : list){
             System.out.println(a);
         }
