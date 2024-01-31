@@ -74,4 +74,57 @@ public class FlightBookingRepositoryImpl implements FlightBookingRepository{
             throw new RuntimeException(e);
         }
     }
+
+    @Override
+    public void update(String flight_name, String source, String destination) {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+        String jdbcUrl = "jdbc:mysql://localhost:3306/TICKETSYSTEM";
+        String userName = "root";
+        String password = "Xworkzodc@123";
+
+        String updateQuery = "UPDATE AIRTICKET SET source = ?, destination = ? " +
+                "where flight_name = ?";
+
+        try {
+            Connection connection = DriverManager.getConnection(jdbcUrl,userName,password);
+            PreparedStatement preparedStatement = connection.prepareStatement(updateQuery);
+            preparedStatement.setString(1,source);
+            preparedStatement.setString(2,destination);
+            preparedStatement.setString(3,flight_name);
+            preparedStatement.executeUpdate();
+            System.out.println("Updated data !!!!!!!!!");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public void delete(String flight_name) {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+        String jdbcUrl = "jdbc:mysql://localhost:3306/TICKETSYSTEM";
+        String userName = "root";
+        String password = "Xworkzodc@123";
+
+        String deleteQuery = "DELETE FROM AIRTICKET WHERE flight_name = ?";
+
+        try {
+            Connection connection = DriverManager.getConnection(jdbcUrl,userName,password);
+            PreparedStatement preparedStatement = connection.prepareStatement(deleteQuery);
+            preparedStatement.setString(1,flight_name);
+            preparedStatement.execute();
+            System.out.println("Deleted");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

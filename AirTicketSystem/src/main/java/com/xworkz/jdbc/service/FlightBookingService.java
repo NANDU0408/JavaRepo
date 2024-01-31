@@ -8,4 +8,8 @@ public interface FlightBookingService {
     public void save(FlightBooking booking);
 
     public  void saveAll(List<FlightBooking> booking);
+
+    public void update(String flight_name, String source, String destination);
+
+    public void delete(String flight_name);
 }

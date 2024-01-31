@@ -40,4 +40,22 @@ public class FlightBookingServiceImpl implements FlightBookingService{
         flightBookingRepository.saveAll(booking);
 
     }
+
+    @Override
+    public void update(String flight_name, String source, String destination) {
+    if (flight_name == null || flight_name.isEmpty()){
+        System.out.println("Please Enter Valid Flight Name");
+    }else {
+        flightBookingRepository.update(flight_name, source,destination);
+    }
+    }
+
+    @Override
+    public void delete(String flight_name) {
+       if (flight_name == null || flight_name.isEmpty()){
+           System.out.println("Please Enter Valid Flight Name");
+       }else {
+           flightBookingRepository.delete(flight_name);
+       }
+    }
 }

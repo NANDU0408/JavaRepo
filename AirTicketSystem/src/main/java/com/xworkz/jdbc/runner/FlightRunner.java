@@ -25,5 +25,8 @@ public class FlightRunner {
         flightBookings.add(flightBooking2);
         flightBookingService.saveAll(flightBookings);
 
+        flightBookingService.update("AirIndia", "Bangalore","Assam");
+        flightBookingService.delete("AirAsia");
+
     }
 }
