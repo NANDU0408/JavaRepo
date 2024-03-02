@@ -1,4 +1,4 @@
-package com.xworkz.nandish.comparable.stream;
+package com.xworkz.nandish.lambdaComparator.stream;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;

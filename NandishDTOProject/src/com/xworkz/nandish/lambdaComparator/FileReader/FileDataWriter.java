@@ -1,4 +1,4 @@
-package com.xworkz.nandish.lambdaComparator.dtoRunner;
+package com.xworkz.nandish.lambdaComparator.FileReader;
 
 import java.io.*;
 import java.util.Scanner;

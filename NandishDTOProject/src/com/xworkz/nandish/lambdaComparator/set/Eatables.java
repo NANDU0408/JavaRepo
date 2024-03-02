@@ -1,4 +1,4 @@
-package com.xworkz.nandish.comparable.set;
+package com.xworkz.nandish.lambdaComparator.set;
 
 import java.util.Collection;
 import java.util.HashMap;

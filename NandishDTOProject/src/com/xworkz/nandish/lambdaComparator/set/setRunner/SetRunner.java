@@ -1,9 +1,11 @@
-package com.xworkz.nandish.comparable.set.setRunner;
+package com.xworkz.nandish.lambdaComparator.set.setRunner;
 
 import com.xworkz.nandish.comparable.set.setDTO.AddressDTO;
 import com.xworkz.nandish.comparable.set.setDTO.PersonDTO;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
 public class SetRunner {
     public static void main(String[] args) {

@@ -32,7 +32,7 @@ public class CountryCapitalRunner {
         CountryDTO country6 = new CountryDTO("USA", 37742154, "North America");
         CapitalDTO capital6 = new CapitalDTO("Ottawa", 994837, "Parliament Hill");
 
-        System.out.println("Country6 is existing: " + countryCapitalMap.containsKey(country4));
+        System.out.println("Country6 is existing: " + countryCapitalMap.containsKey(country6));
         System.out.println();
 
         countryCapitalMap.put(country6, capital6);
